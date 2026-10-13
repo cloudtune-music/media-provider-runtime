@@ -1,0 +1,19 @@
+version = 1
+revision = 3
+requires-python = ">=3.12"
+
+[[package]]
+name = "media-provider-runtime"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "media-provider-sdk" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "media-provider-sdk", git = "https://github.com/cloudtune-music/media-provider-sdk.git?tag=v0.1.0" }]
+
+[[package]]
+name = "media-provider-sdk"
+version = "0.1.0"
+source = { git = "https://github.com/cloudtune-music/media-provider-sdk.git?tag=v0.1.0#2db38c876bd43b841948b5b999c8c4f22af99cfb" }
